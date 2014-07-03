@@ -16,13 +16,14 @@ var app = angular.module('store', []);
     this.review = {};
 	this.addReview = function(product){
 	  product.reviews.push(this.review);
+	  this.review = {};
 	  };
   });
  var gems = [
    {
    name: 'Manveen',
    price: 50000,
-   description : ' She is a good girl',
+   description : ' She is a Marketing Executive.',
    canPurchase: false,
    images: [
    { full: 'https://lh5.googleusercontent.com/-b0-k99FZlyE/AAAAAAAAAAI/AAAAAAAAAAA/eu7opA4byxI/photo.jpg?sz=120'
@@ -42,7 +43,7 @@ var app = angular.module('store', []);
    {
    name: 'Deep',
    price: 60536.87,
-   description : ' He is a good girl',
+   description : ' He works as a Software Engineer.',
    canPurchase: false,
    images: [
    { full: 'https://lh5.googleusercontent.com/-b0-k99FZlyE/AAAAAAAAAAI/AAAAAAAAAAA/eu7opA4byxI/photo.jpg?sz=120'
